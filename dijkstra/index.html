@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Algo<span>Visualizer</span></div>
+        <div class="controls">
+            <button id="start-btn">Visualize Dijkstra</button>
+            <button class="secondary" id="random-btn">Randomize Points</button>
+            <button class="secondary" id="clear-btn">Clear Board</button>
+        </div>
+    </header>
+
+    <main id="grid-container"></main>
+
+    <div class="legend">
+        <div class="leg-item"><div class="box start"></div> Start</div>
+        <div class="leg-item"><div class="box target"></div> Target</div>
+        <div class="leg-item"><div class="box wall"></div> Wall</div>
+        <div class="leg-item"><div class="box visited-box"></div> Visited</div>
+        <div class="leg-item"><div class="box path"></div> Path</div>
+    </div>
+
+    
+    <script src="js/dijkstra.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
